@@ -1,6 +1,22 @@
 # apimocker [![Build Status](https://api.travis-ci.org/gstroup/apimocker.svg?branch=master)](https://travis-ci.org/gstroup/apimocker)
 [![NPM](https://nodei.co/npm/apimocker.svg?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/apimocker/)
 
+To Start/Config Mocked API on Windows:
+
+1. Open mocked-api -> npm install -g apimocker
+
+2. npm install
+
+3. Go to C:\Users\Satish\AppData\Roaming\npm\node_modules\apimocker & edit config.json to update mockDirectory as "mockDirectory": "[root directory full path]/mocked-api/MockData/FlightDataDummy"
+
+4. In trminal run: apimocker to start the server
+
+5. Check if response is coming via hitting http://localhost:7878/first
+
+6. Service is up now.
+
+NOTES:
+
 This is a node.js module to run a simple http server, which can serve up mock service responses.
 Responses can be JSON or XML to simulate REST or SOAP services.
 Access-Control HTTP Headers are set by default to allow CORS requests.
